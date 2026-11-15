@@ -143,18 +143,18 @@
 
 ```
 geopolitics-lecture-notes/
-├─ README.md                       ← 本文件（总纲）
-├─ index.html                      ← 可视化总图，浏览器直接打开
-├─ LICENSE-NOTES.md                ← 内容立场与使用边界声明（请先读）
+├─ index.html                      ← 可视化总图（建议从这里进入）
+├─ README.md / README.html         ← 本文件：总纲
+├─ LICENSE-NOTES.md / .html        ← 内容立场与使用边界声明（请先读）
 ├─ lectures/
-│  ├─ 01-iran.md
-│  ├─ 02-japan.md
-│  ├─ 03-russia-ukraine.md
-│  ├─ 04-immigration-and-whites.md
-│  ├─ 05-midterms.md
-│  └─ 06-france.md
+│  ├─ 01-iran.md / .html
+│  ├─ 02-japan.md / .html
+│  ├─ 03-russia-ukraine.md / .html
+│  ├─ 04-immigration-and-whites.md / .html
+│  ├─ 05-midterms.md / .html
+│  └─ 06-france.md / .html
 └─ appendix/
-   ├─ glossary.md                  ← 术语表与自创概念索引
+   ├─ glossary.md / .html          ← 术语表与自创概念索引
    └─ transcripts/                 ← 带时间戳的分段文字稿（审校用）
       ├─ 01-iran.txt
       ├─ 02-japan.txt
@@ -163,6 +163,17 @@ geopolitics-lecture-notes/
       ├─ 05-midterms.txt
       └─ 06-france.txt
 ```
+
+### 两种阅读格式
+
+每份笔记同时提供 **Markdown** 与 **HTML** 两个版本，内容一一对应：
+
+| 用途 | 建议打开 |
+|---|---|
+| 在线浏览、GitHub 内查看 | `.md`（GitHub 自动渲染） |
+| 离线阅读、打印、手机看 | `.html`（单文件、无外部依赖，双击即开） |
+
+HTML 版带有本讲目录、上一讲/下一讲导航与统一排版，并在页脚标注内容立场。若两者不一致，**以 `.md` 为源文件**（HTML 由 Markdown 生成）。
 
 `appendix/transcripts/` 保留原始转写（仅做标点与分段处理），用于核对笔记中的时间戳与引述；它不是逐字稿校对版，`[NNNm]` 为块起始时间标记。
 
@@ -182,3 +193,4 @@ geopolitics-lecture-notes/
 | 日期 | 变更 |
 |---|---|
 | 2026-11-15 | 初版：收录 01–06 六讲笔记、总纲、术语表、分段文字稿与总图 |
+| 2026-11-15 | 新增 HTML 阅读版：六讲笔记、总纲、术语表、使用声明均为双格式（.md + .html） |

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>05 · 中期选举专题：一场&quot;结果不重要&quot;的选举 · Geopolitics Lecture Notes</title>
+<style>
+:root{
+  --bg:#fbfaf7; --paper:#ffffff; --ink:#1d2229; --dim:#4a5563; --faint:#868f9c;
+  --line:#e4dfd6; --accent:#9c6b18; --accent2:#2f5f8a; --quote:#f4efe4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",-apple-system,"Segoe UI",sans-serif;
+  font-size:16.5px;line-height:1.95;-webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.bar{
+  position:sticky;top:0;z-index:20;background:rgba(251,250,247,.94);
+  backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line);
+}
+.bar .in{max-width:820px;margin:0 auto;padding:11px 26px;display:flex;align-items:center;gap:14px;
+  font-size:13px;color:var(--faint);font-family:-apple-system,"Segoe UI",sans-serif}
+.bar a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
+.bar a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.bar .sep{color:#cfc8bb}
+.bar .nav{margin-left:auto;display:flex;gap:6px}
+.bar .nav a{
+  border:1px solid var(--line);border-radius:3px;padding:3px 10px;background:#fff;
+  font-size:12.5px;color:var(--dim);border-bottom:1px solid var(--line)
+}
+.bar .nav a:hover{border-color:var(--accent);color:var(--accent)}
+.bar .nav a.off{opacity:.32;pointer-events:none}
+
+main{max-width:820px;margin:0 auto;padding:54px 26px 110px;background:var(--paper);
+  box-shadow:0 0 0 1px var(--line),0 2px 40px -20px rgba(0,0,0,.12);margin-top:28px;margin-bottom:70px}
+h1{
+  font-size:clamp(27px,4vw,37px);line-height:1.35;font-weight:700;letter-spacing:.005em;
+  margin:0 0 26px;padding-bottom:24px;border-bottom:2px solid var(--ink);
+}
+h2{
+  font-size:22px;font-weight:700;margin:56px 0 18px;padding-left:14px;
+  border-left:4px solid var(--accent);line-height:1.5;letter-spacing:.01em;
+}
+h3{
+  font-size:17.5px;font-weight:700;margin:36px 0 12px;color:var(--accent2);line-height:1.6;
+}
+p{margin:0 0 18px;color:var(--ink)}
+strong{font-weight:700;color:#0f1318}
+blockquote{
+  margin:22px 0;padding:18px 22px;background:var(--quote);border-left:3px solid var(--accent);
+  border-radius:0 3px 3px 0;color:#3c444f;font-size:15.5px;line-height:1.9;
+}
+blockquote p{margin:0 0 8px;color:#3c444f}
+blockquote p:last-child{margin-bottom:0}
+hr{display:none}
+ul,ol{margin:0 0 20px;padding-left:26px}
+li{margin-bottom:9px;color:var(--ink)}
+li>strong{color:#0f1318}
+code{background:#f0ece3;padding:1.5px 6px;border-radius:3px;font-size:.88em;
+  font-family:"Cascadia Code",Consolas,monospace;color:#7a4b12}
+pre{background:#f7f4ec;border:1px solid var(--line);border-radius:4px;padding:18px 20px;
+  overflow-x:auto;line-height:1.75;margin:20px 0}
+pre code{background:none;padding:0;color:#3a4149;font-size:13.5px}
+table{
+  width:100%;border-collapse:collapse;margin:24px 0;font-size:14.5px;line-height:1.7;
+  background:#fff;border:1px solid var(--line);
+}
+thead th{
+  background:#f5f1e7;text-align:left;padding:11px 13px;font-weight:700;font-size:13.5px;
+  border-bottom:1.5px solid var(--line);color:#2b323b;white-space:nowrap;
+}
+tbody td{padding:11px 13px;border-bottom:1px solid #efeae0;vertical-align:top;color:var(--dim)}
+tbody td:first-child{color:var(--ink);font-weight:600;white-space:nowrap;width:1%;padding-right:18px}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:#fdfbf6}
+a{color:var(--accent2);text-decoration:none;border-bottom:1px solid rgba(47,95,138,.3)}
+a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+footer{max-width:820px;margin:0 auto 60px;padding:0 26px;color:var(--faint);font-size:12.5px;
+  line-height:1.9;font-family:-apple-system,"Segoe UI",sans-serif}
+footer a{color:var(--dim)}
+
+/* 目录 */
+.toc{
+  background:#faf7f0;border:1px solid var(--line);border-radius:4px;
+  padding:20px 24px 14px;margin:30px 0 10px;
+}
+.toc .t{font-size:11.5px;letter-spacing:.22em;color:var(--faint);margin-bottom:12px;
+  font-family:-apple-system,"Segoe UI",sans-serif}
+.toc ol{margin:0;padding-left:18px;columns:1}
+.toc li{margin-bottom:6px;font-size:14.5px;line-height:1.6}
+.toc a{color:var(--dim);border-bottom:none}
+.toc a:hover{color:var(--accent)}
+
+@media(max-width:680px){
+  body{font-size:16px;line-height:1.9}
+  main{margin:0;padding:32px 18px 70px;box-shadow:none;border:none}
+  .bar .in{padding:9px 16px;flex-wrap:wrap;gap:8px}
+  .bar .nav{margin-left:0;width:100%}
+  table{font-size:13px}
+  thead th,tbody td{padding:8px 9px}
+  h2{font-size:19px;margin-top:44px}
+}
+@media print{
+  .bar,.toc{display:none}
+  main{box-shadow:none;margin:0;padding:0;max-width:none}
+  table{page-break-inside:avoid}
+  h2,h3{page-break-after:avoid}
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="in">
+  <a href="../index.html">总图</a><span class="sep">/</span><a href="../README.html">总纲</a>
+  <span class="sep">/</span><span>05 中期选举</span>
+  <span class="nav"><a href="04-immigration-and-whites.html">← 上一讲</a><a href="06-france.html">下一讲 →</a></span>
+</div></div>
+<main>
+<h1 id="05--中期选举专题一场结果不重要的选举">05 ·
+中期选举专题：一场"结果不重要"的选举</h1>
+<blockquote>
+<p>日期：2026-10-13　|　时长：127 分钟　|　讲者：威毅<br />
+系列位置：唯一以<strong>当下事件</strong>为主体的讲次。讲者开篇即声明：<strong>"选举的实际结果，和
+2018 年大选结果的关系其实不是特别大。"</strong></p>
+</blockquote>
+<hr />
+<nav class="toc"><div class="t">本讲目录</div><ol><li><a href="#一讲座定位用变与不变拆解一场选举">一、讲座定位：用&quot;变与不变&quot;拆解一场选举</a></li><li><a href="#二核心命题">二、核心命题</a></li><li><a href="#三论证主线带时间戳">三、论证主线（带时间戳）</a></li><li><a href="#四关键概念与自创术语">四、关键概念与自创术语</a></li><li><a href="#五讲者的判断与预测">五、讲者的判断与预测</a></li><li><a href="#六未展开与留白">六、未展开与留白</a></li><li><a href="#七与系列其他讲次的接点">七、与系列其他讲次的接点</a></li><li><a href="#八一句话记住这一讲">八、一句话记住这一讲</a></li></ol></nav>
+
+<h2
+id="一讲座定位用变与不变拆解一场选举">一、讲座定位：用"变与不变"拆解一场选举</h2>
+<p>讲者没有做"谁会赢"的预测，而是给了两套分析工具：</p>
+<ol type="1">
+<li><strong>四条观察守则</strong>（防止被党派话术带偏）</li>
+<li><strong>五个议题标签</strong>（判断任何一位中间派选民的态度）</li>
+</ol>
+<p>然后才是技术分析（参议院席位地图）与四个可能结果。真正的结论在最后：<strong>选举不决定美国，基本面决定美国。</strong></p>
+<hr />
+<h2 id="二核心命题">二、核心命题</h2>
+<ol type="1">
+<li><strong>不存在"阴谋论支配整个选举"</strong>，但也不存在"完全没有操纵"的选举；关键州确实可能被影响（讲者明确点名
+2024 年）。</li>
+<li><strong>中期选举不利于执政党——这是永恒的"不变"</strong>；但特朗普的不支持率超过
+50%（历史上通常是 20–30%），这是前所未有的"变"。</li>
+<li><strong>五个议题标签中，伊朗问题遭到全社会反对</strong>（除内塔尼亚胡，而他没有选票）。</li>
+<li><strong>中期选举结果不决定两年后的大选</strong>；两年的走向取决于两党能否整合自己的极端势力——讲者<strong>完全不看好民主党</strong>。</li>
+<li><strong>外战是内战的序幕</strong>——美国历史上每一轮康波底部，对外战争都是内战的序章。</li>
+</ol>
+<hr />
+<h2 id="三论证主线带时间戳">三、论证主线（带时间戳）</h2>
+<h3 id="31-四条观察守则00050020">3.1 四条观察守则（00:05–00:20）</h3>
+<table>
+<thead>
+<tr>
+<th>守则</th>
+<th>讲者的表述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 反对阴谋论化</td>
+<td>"用阴谋论支配整个选举……离事实还是有一些远的"</td>
+</tr>
+<tr>
+<td>② 承认局部操纵</td>
+<td>"每一次美国选举都有造票、突然把票消掉、死人投票……但你说它能影响整个选举那不可能"</td>
+</tr>
+<tr>
+<td>③ <strong>最后一个月才决定性</strong></td>
+<td>"选举的最后一个月才是决定胜出的关键"；2016
+年希拉里邮件门即为例证</td>
+</tr>
+<tr>
+<td>④ 社会撕裂导致白热化</td>
+<td>从去年 8 月到今年 10 月，"14
+个月的无数次大事件已经把主题塑造出来了"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-中期选举的不变与变00200040">3.2
+中期选举的"不变"与"变"（00:20–00:40）</h3>
+<p><strong>不变：中期选举不利于执政党</strong></p>
+<ul>
+<li>历史上基本只有肯尼迪例外（"干得太好拿下了两院，结果不好"）</li>
+</ul>
+<p><strong>变（四条对共和党不利，一条对共和党有利）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>变化</th>
+<th>方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>特朗普不支持率<strong>超过 50%</strong>（超过他自己 2016
+年纪录，也超过拜登）</td>
+<td>对共和党极不利</td>
+</tr>
+<tr>
+<td>2</td>
+<td>民主党主动走<strong>民主社会主义路线</strong>（北欧/德国社民党模式）→
+被共和党打成"共产党" → 大资产阶级被吓到；竞选资金据讲者观察已到
+<strong>1:4</strong> 向共和党倾斜</td>
+<td><strong>对共和党有利</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>MAGA
+分裂</strong>：真正支持"美国优先"的人对特朗普失望（"他干预的好像比小布什还多，小布什只打了两场战争"）</td>
+<td>对共和党不利</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>国际关系重大实践对选举的影响力空前</strong>（伊朗、俄乌、台湾、格陵兰、非洲、胡塞集中出现）</td>
+<td>对共和党不利</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-五个议题标签00400105-全讲核心工具">3.3
+五个议题标签（00:40–01:05）★ 全讲核心工具</h3>
+<p>讲者给出一个"中间派必问五题"的清单——任何稍偏中间的人都会认为总统五项全部做得不够：</p>
+<table>
+<thead>
+<tr>
+<th>排序</th>
+<th>议题</th>
+<th>为什么精准打击共和党基本盘</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>伊朗</strong></td>
+<td>① 打不赢（共和党选民爱国、支持控制中东石油）；②
+战争威胁到自身利益；③
+福音派中的极端亲以色列派不满（"你没解决伊朗，反而把矛盾放大"）；④
+摇摆州的中东移民（2024 年支持特朗普，现在反了）</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>通货膨胀</strong></td>
+<td>受伤最重的不是底层、不是大资产阶级，而是"靠自己努力工作、以领救济为耻"的共和党铁盘（开卡车、修草坪）</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>就业</strong></td>
+<td>①
+美国已进入加息周期，靠银行贷款的民营企业（真正的就业发动机）受打击；②
+硅谷右翼推动
+AI，首当其冲的正是文字工作者（律师、商务顾问、心理咨询）</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>移民</strong></td>
+<td>双向失分：中间派嫌开枪太粗暴；极右嫌"还不够"。<strong>"两边都死人是特朗普自己选出来的最差解法"</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>关税</strong></td>
+<td>精确打击农业州（加拿大反制"又准又狠，盯着铁票仓"）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>讲者的总结："只要你稍微是中间派，甚至是偏右但不是特别右，他都会说总统做得不够好。但五个问题里最不满意的，就是伊朗问题。"</p>
+</blockquote>
+<h3 id="34-三个人物事件如何摧毁特朗普的威望01050130">3.4
+三个"人物事件"如何摧毁特朗普的威望（01:05–01:30）</h3>
+<p><strong>① 爱泼斯坦案与 MTG（格林女议员）</strong></p>
+<p>讲者的叙事（他自己说"我一条一条看过，也让 AI 看过"）：</p>
+<ul>
+<li>MTG 参政动机源于接触过爱泼斯坦案的受害者；她带受害者去见特朗普</li>
+<li>特朗普的反应：先把女孩们关到另一个屋子，然后对她大吼——"是我让你上台的，你要听我的话"；"你这么干会威胁到一些我很重要的朋友"</li>
+<li>MTG 由此决裂，并成为"把特朗普拉下水"的人</li>
+<li>讲者的定性：<strong>爱泼斯坦案不是性侵问题，是跨国情报组织的利益交换网络</strong>；岛上同时有摩萨德、克格勃、军情五/六处的密切人士</li>
+<li><strong>"爱泼斯坦跟以色列情报组织摩萨德肯定有不可切割的关系"</strong>——但讲者明确声明"没有直接证据，所以我不做更极端的推论"</li>
+</ul>
+<p><strong>② 查理·柯克之死与伊朗战争</strong></p>
+<ul>
+<li>柯克是 MAGA 中少有的"能跟民主党线下哲学辩论不落下风"的 90 后</li>
+<li>他被枪杀前三天，愤怒地冲出特朗普办公室，对塔克·卡尔森与情报总监说：<strong>"你们一定要阻止总统卷入伊朗战争"</strong></li>
+<li>三天后他被杀。之后特朗普对伊朗开战</li>
+<li>情报总监加巴德（从民主党叛逃而来，反对卷入中东）随后辞职："特朗普会把我们带到沟里"</li>
+<li>反恐中心主任亦辞职（"怕背锅"）</li>
+</ul>
+<blockquote>
+<p><strong>讲者的判断</strong>："这两个问题是特朗普第二任期的两个最重要的事件。而这两个事件都是国际关系事件。……<strong>这也就是我为什么说我们现在已经走向康波底部的原因就是，现在是世界秩序在支配美国，而不是美国在支配世界秩序。</strong>"（约
+01:25）</p>
+</blockquote>
+<p><strong>③ 齐泽克的精神分析</strong></p>
+<ul>
+<li>讲者引用"全能自恋的巨婴"论，认为理解特朗普的心理比理解选举更能预判美国的走向</li>
+</ul>
+<h3 id="35-技术分析参议院是唯一战场01300145">3.5
+技术分析：参议院是唯一战场（01:30–01:45）</h3>
+<table>
+<thead>
+<tr>
+<th>州</th>
+<th>讲者的观察</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>德克萨斯</td>
+<td>出现民主党牧师候选人（亚当·汉密尔顿）——因为贝森特砍福利，牧区民众找他哭诉</td>
+</tr>
+<tr>
+<td>阿拉斯加 / 俄亥俄</td>
+<td>俄亥俄因 AI 数据中心落地引发反弹</td>
+</tr>
+<tr>
+<td>若干州</td>
+<td>民主党收编了上次表现很好的独立参选人（如丹·奥斯本，上次只差
+6%）</td>
+</tr>
+<tr>
+<td>密歇根</td>
+<td>被关税打惨；民主党候选人恰好是中东裔</td>
+</tr>
+</tbody>
+</table>
+<p><strong>四个结果</strong>：</p>
+<ol type="1">
+<li>共和党全拿两院 → <strong>不可能</strong>（历史上只有肯尼迪）</li>
+<li>共和党拿参议院、民主党拿众议院 → 可能性低</li>
+<li><strong>民主党全拿众议院 + 参议院</strong> →
+讲者认为参议院仍有变数，但"50% 以上概率共和党要完蛋"</li>
+<li>讲者的期望（从中国利益出发）：<strong>希望特朗普至少保住参议院</strong>，"这样康波最底部过渡时波动没那么刺激"</li>
+</ol>
+<h3 id="36-基本面外战是内战的序幕01450205">3.6
+基本面：外战是内战的序幕（01:45–02:05）★★</h3>
+<p>讲者把 60 年康波与美国史对表：</p>
+<table>
+<thead>
+<tr>
+<th>康波</th>
+<th>对外战争</th>
+<th>随后发生的"内战"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1789</td>
+<td>1812 年美加战争</td>
+<td>支持英王的美国人逃往加拿大（"被篡夺者盘踞南方白宫"）</td>
+</tr>
+<tr>
+<td>1848</td>
+<td>美墨战争</td>
+<td>新获取的领土成为南北战争的主因</td>
+</tr>
+<tr>
+<td>1917</td>
+<td>一战</td>
+<td>凡尔赛未签 → 禁酒运动、盖茨比式的"新富 vs 旧富"冲突 → 大萧条 →
+罗斯福 vs 州权的准内战（胡佛掌 FBI，联邦彻底碾压州权）</td>
+</tr>
+<tr>
+<td>1968</td>
+<td>越南战争</td>
+<td>民权运动彻底推翻军工阶层对社会控制的"威权"</td>
+</tr>
+<tr>
+<td><strong>2028?</strong></td>
+<td>特朗普的多线扩张不顺</td>
+<td>极左与极右同时崛起</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>讲者的关键结论</strong>："美国历史上每次在康波底部，他的对外战争实际上都是他内战的序幕。无论打得怎么样，打赢打输，都会在下一步立马就是内战。"</p>
+</blockquote>
+<h3 id="37-力量对比与-202802050215">3.7 力量对比与
+2028（02:05–02:15）</h3>
+<p><strong>民主党一侧</strong>：部分基督教基层牧师 + 城市平民 +
+加州建制盘（纽森、哈里斯）+ 对特朗普失望的 MAGA</p>
+<p><strong>共和党一侧</strong>：硅谷右派 + 共和党建制派（"伪装成 MAGA
+的建制派"）+ 狂热的基督教高层 + 可能导向 MAGA 的部分民主党建制派</p>
+<blockquote>
+<p><strong>讲者的判断</strong>："你要看力量对比，我告诉你民主党一点也不占优势。"</p>
+<p>最终落点："<strong>对特朗普失望的这些人——也就是觉得特朗普不够极端的人——其实才是
+2028
+年两党争取的主要对象。这些人如果不投票，特朗普就输了；如果投票，MAGA
+就会赢得胜利。</strong>"</p>
+</blockquote>
+<h3 id="38-加班问答美国与希腊罗马02150230">3.8
+加班问答：美国与希腊罗马（02:15–02:30）</h3>
+<p>主持人临时加问"美国是不是新罗马"，讲者的回答成为本讲最精彩的收尾：</p>
+<ul>
+<li><strong>美国比欧洲更接近罗马</strong>："美国的基督教在正统眼里是一端（异端）"，包袱小，所以古典复兴更快——美国重建了帕特农神庙，希腊自己都没重建</li>
+<li>美国是"邪教遍地"的国家：盖亚崇拜、密特拉教、比罗马更古老的教派、藏传佛教的边缘教派，都在美国有注册教会</li>
+<li>罗马的"秘仪"（Mysteries）→ 美国的三 K 党（名称里的三个 K
+都是希腊语）、骷髅会</li>
+<li>罗马的民族国家化：法国大革命、俄国革命、美国建国都树立<strong>女神</strong>（自由引导人民、祖国母亲、自由女神）——这是罗马大地母神崇拜的复兴</li>
+<li>讲者对希腊罗马的选择性评价：
+<ul>
+<li><strong>优势</strong>：逻辑性强（希腊语的格位变化能精确表达层级）→
+形式逻辑 → 牛顿时代</li>
+<li><strong>劣势</strong>：社会博弈残酷，不同情失败者，缺乏自我调节能力
+→ <strong>下限极低</strong>（希腊崩溃后连文字都换了）</li>
+<li><strong>对当下战争的推论</strong>："一旦他意识到你是我的敌人——'公布你为罗马的敌人'——这个指控基本就是我要把你杀光了。所以对美国不能抱幻想。"</li>
+</ul></li>
+<li>结论：MAGA
+的宣传对中国"相对来说比较低势"（低劣/低效），因为特朗普的失败是"没兑现承诺"而非"路线错误"</li>
+</ul>
+<h3 id="39-尾声法国街头的预告02300235">3.9
+尾声：法国街头的预告（02:30–02:35）</h3>
+<p>主持人问"法国街头运动是偶然还是已经开始"，讲者的回答只有一句：</p>
+<blockquote>
+<p><strong>"这不是偶然，这是康波已经开始了。法国已经点上了。他现在已经占领巴黎证券交易所，接下来就要占领布鲁塞尔……布鲁塞尔如果沦陷，下一步就要占领法兰克福。"</strong></p>
+</blockquote>
+<hr />
+<h2 id="四关键概念与自创术语">四、关键概念与自创术语</h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>五个议题标签</strong></td>
+<td>伊朗 / 通胀 / 就业 / 移民 / 关税——判断中间派态度的五问</td>
+</tr>
+<tr>
+<td><strong>变与不变</strong></td>
+<td>中期选举的结构性规律与本轮的特殊性</td>
+</tr>
+<tr>
+<td><strong>外战是内战的序幕</strong></td>
+<td>美国康波底部的历史模式</td>
+</tr>
+<tr>
+<td><strong>今天死 / 明天死</strong></td>
+<td>沿用伊朗一讲的弱势方选择模型</td>
+</tr>
+<tr>
+<td><strong>秘仪（Mysteries）</strong></td>
+<td>罗马秘密宗教仪式，讲者视为美国秘密结社的直接来源</td>
+</tr>
+<tr>
+<td><strong>全能自恋的巨婴</strong></td>
+<td>齐泽克对特朗普的精神分析概括</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="五讲者的判断与预测">五、讲者的判断与预测</h2>
+<table>
+<thead>
+<tr>
+<th>判断</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>共和党必定丢掉众议院</td>
+<td>五个议题标签 + 不支持率</td>
+</tr>
+<tr>
+<td>参议院"非常不容乐观"</td>
+<td>德州、俄亥俄、阿拉斯加、密歇根等州异动</td>
+</tr>
+<tr>
+<td>民主党两年后<strong>不会</strong>赢</td>
+<td>"民主党左派到现在还没有推出一个核心"</td>
+</tr>
+<tr>
+<td>美国会先于其他国家出事</td>
+<td>政治与经济的流动性最快</td>
+</tr>
+<tr>
+<td>高度警惕美股，尤其科技股</td>
+<td>与美联储/财政部困局联动</td>
+</tr>
+<tr>
+<td>美国股市若崩，"起码出现 1929 年的情况"</td>
+<td>问答环节</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="六未展开与留白">六、未展开与留白</h2>
+<ul>
+<li>格雷厄姆具体死因（"我们不讨论他怎么死的"）</li>
+<li>特朗普的"小圈子贪腐"细节（只在法国一讲再次提及）</li>
+<li>中国的应对路径（"大家不用思考祖国未来的路到底走向"）</li>
+<li>讲者预告的"美国政治光谱：极左极右都在民主党"留到下一讲</li>
+</ul>
+<hr />
+<h2 id="七与系列其他讲次的接点">七、与系列其他讲次的接点</h2>
+<table>
+<thead>
+<tr>
+<th>接点</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>← 伊朗</td>
+<td>伊朗问题被列为<strong>第一号议题标签</strong>，是特朗普最大的政治包袱</td>
+</tr>
+<tr>
+<td>← 俄乌</td>
+<td>"特朗普不胜利就完蛋"在此成为整讲前提；"先出事的是美国"的判断在此获得验证路径</td>
+</tr>
+<tr>
+<td>← 移民及白人</td>
+<td>"万斯被民主党生产出来"→ 本讲中 MAGA 分裂的社会基础</td>
+</tr>
+<tr>
+<td>→ 法国</td>
+<td>结尾直接交给法国一讲的"街头运动"；"康波已经开始"成为下一讲的题目</td>
+</tr>
+<tr>
+<td>→ 全系列</td>
+<td>"世界秩序在支配美国，而非美国在支配秩序"——这句话是全系列的总纲</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="八一句话记住这一讲">八、一句话记住这一讲</h2>
+<blockquote>
+<p><strong>中期选举改变不了美国的方向，因为方向早就被 2028
+年的康波定了；它只能告诉你在到那个点之前，车会晃得多厉害。</strong></p>
+</blockquote>
+</main>
+<footer>
+  本页为讲座笔记整理，记录讲者观点与论证结构，不代表整理者立场。详见 <a href="../LICENSE-NOTES.html">LICENSE-NOTES</a>。<br>
+  时间戳为视频播放时间，可用于回看核对；转写存在同音异形误差，详见总纲「来源与可信度说明」。
+</footer>
+</body>
+</html>
