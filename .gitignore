@@ -1,0 +1,29 @@
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# 临时与草稿
+*.tmp
+*.bak
+*.swp
+~$*
+_preview*
+_p[0-9].png
+
+# 原始素材（本仓库不收录音视频）
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wav
+*.m4a
+
+# Python 缓存（如本地跑脚本）
+__pycache__/
+*.pyc
+
+# 迁移前的旧目录残留（内容已并入 appendix/transcripts）
+附录_语料/
